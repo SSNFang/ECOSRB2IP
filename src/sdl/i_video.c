@@ -87,7 +87,7 @@
 #endif
 
 // maximum number of windowed modes (see windowedModes[][])
-#define MAXWINMODES (18)
+#define MAXWINMODES (21)
 
 /**	\brief
 */
@@ -156,6 +156,8 @@ static const char *fallback_resolution_name = "Fallback";
 static INT32 windowedModes[MAXWINMODES][2] =
 {
 	{1920,1200}, // 1.60,6.00
+	{1728,1080}, // 1.33,4.00
+	{1440,1080}, // 1.33,4.00
 	{1920,1080}, // 1.66
 	{1680,1050}, // 1.60,5.25
 	{1600,1200}, // 1.33
@@ -173,6 +175,7 @@ static INT32 windowedModes[MAXWINMODES][2] =
 	{ 640, 400}, // 1.60,2.00
 	{ 320, 240}, // 1.33,1.00
 	{ 320, 200}, // 1.60,1.00
+	{ 320, 180}, // 1.66
 };
 
 static void Impl_VideoSetupSDLBuffer(void);
